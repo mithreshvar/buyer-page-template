@@ -3,6 +3,7 @@ import { useState } from "react"
 import ImageSlider from "./components/ImageSlider"
 import TitleCard from "./components/TitleCard"
 
+import Sparkle from './assets/noun-sparkle.svg'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
 
 
     return (
-        <div className="h-screen w-screen px-[40px] py-[30px]">
+        <div className="h-screen w-screen px-[40px] py-[50px] overflow-y-auto">
 
             <div className=" w-full grid grid-cols-5 gap-x-[25px]" >
 
@@ -123,6 +124,20 @@ function App() {
                     }
                 </div>
 
+            </div>
+
+            <div className="relative px-[30px]">
+                <div className=" absolute left-0 top-1/2 -translate-y-1/2 " >
+                    <div className="relative w-[120px] h-[120px]  bg-gradient-to-br from-[#1ed2bd] to-[#69dd79] rounded-full border-[4px] border-white shadow-[0px_0px_15px_2px_#00000050] "> {/*shadow-[0px_0px_2px_2px_#00000025,0px_0px_2px_6px_#00000017,0px_0px_2px_9px_#00000009] ">*/}
+                        <img src={Sparkle} alt="sparkle-icon-1" className="w-[70px] h-[70px] text-[#ffffff]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"  />
+                        <img src={Sparkle} alt="sparkle-icon-1" className="w-[25px] h-[25px] text-[#ffffff]  absolute top-[20px] right-[20px]"  />
+                        <img src={Sparkle} alt="sparkle-icon-1" className="w-[18px] h-[18px] text-[#ffffff]  absolute bottom-[23px] left-[23px] "  />
+                    </div>
+                </div>
+
+                <div className=" pl-[120px] pr-[30px] p-[20px] text-[#3a434f] bg-gradient-to-br from-[#d2eee5] to-[#e8d8f6] rounded-[15px] font-semibold xl:text-[13px] lg:text-[11px] md:text-[10px] text-[9px] ">
+                    <p>Lorenispsum is the text that can be used to type the description to create a feel of the what the product holds.Lorenispsum is the text that can be used to type the description to create a feel of the what the product holds.Lorenispsum is the text that can be used to type the description to create a feel of the what the product holds.</p>
+                </div>
             </div>
 
         </div>
