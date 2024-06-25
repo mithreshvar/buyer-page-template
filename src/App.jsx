@@ -118,7 +118,7 @@ function App() {
                 <div className="col-span-4 grid grid-cols-4 p-[25px] gap-x-[35px]">
                     {
                         Array.from({length: itemCount}).map((_, index) => 
-                            <button key={'button_'+index} className="bg-[#211a66] text-white rounded-[7px] font-semibold  xl:text-[14px] lg:text-[13px] md:text-[11px] text-[9px]  xl:px-[25px] xl:py-[12px]  lg:px-[22px]  lg:py-[10px]  md:px-[20px]  md:py-[9px]  px-[18px]  py-[8px]  ">Add to cart</button>
+                            <button key={'button_'+index} className="bg-[#211a66] hover:bg-[#0b0696] transition-colors duration-200 text-white rounded-[7px] font-semibold  xl:text-[14px] lg:text-[13px] md:text-[11px] text-[9px]  xl:px-[25px] xl:py-[12px]  lg:px-[22px]  lg:py-[10px]  md:px-[20px]  md:py-[9px]  px-[18px]  py-[8px]  ">Add to cart</button>
                         )
                     }
                 </div>
